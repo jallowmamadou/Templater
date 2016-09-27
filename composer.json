@@ -1,0 +1,21 @@
+{
+    "name": "sulsira/templater",
+    "description": "takes textarea data set and replaces the variables in it, then produces a document",
+    "type": "laravel",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "mamadou jallow",
+            "email": "sulsiralumo@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4":{
+          "Sulsira\\Templater\\": "src/"
+      }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
