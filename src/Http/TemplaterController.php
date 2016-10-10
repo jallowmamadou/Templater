@@ -18,12 +18,9 @@ class TemplaterController extends Controller{
         $templater = new Templater();
 
         $results = $templater
-
-                ->template("my name is **Fullname** and i am a gambian")
-                ->variables(['Fullname'=>'full_name'])
-                ->data(['full_name' => 'mamadou jallow'])
-                ->get();
-
-        dd($results);
+                    ->template("my name is **Fullname** and i am a gambian")
+                    ->variables(['Fullname'=>'full_name'])
+                    ->data(['full_name' => 'mamadou jallow'])
+                    ->get();
     }
 } 

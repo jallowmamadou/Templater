@@ -123,8 +123,14 @@ class Templater {
         $string = $template;
 
         foreach($variables as $match => $field){
-            $replace = ' '.$data[$field]. ' ';
-            $string = preg_replace('/[\s]\*\*('. $match .')\*\*[\s]/i', $replace ,$string);
+
+            if(isset($data[$field])){
+
+                $replace = ' '.$data[$field]. ' ';
+                $string = preg_replace('/\*\*('. $match .')\*\*/i', $replace ,$string);
+
+            }
+
         }
 
         return $string;

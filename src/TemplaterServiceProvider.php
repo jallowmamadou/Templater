@@ -9,7 +9,7 @@ namespace Sulsira\Templater;
 
 use Illuminate\Support\ServiceProvider;
 
-class TemplaterServiceProvider extends ServiceProvider   {
+class TemplaterServiceProvider extends ServiceProvider {
 
     /**
      * Register the service provider.
@@ -19,7 +19,7 @@ class TemplaterServiceProvider extends ServiceProvider   {
     public function register()
     {
        $this->app->bind('templater', function($app){
-           return new Todo;
+           return new Templater;
        });
     }
 
