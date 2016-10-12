@@ -25,7 +25,6 @@ class TemplaterServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        $this->package('sulsira/templater');
         require __DIR__. '/Http/routes.php';
     }
 }
