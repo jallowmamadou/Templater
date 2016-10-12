@@ -16,7 +16,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "illuminate/support": "~5",
-        "sulsira/templater": "dev-master"
+        "illuminate/support": "~5"
     }
 }
