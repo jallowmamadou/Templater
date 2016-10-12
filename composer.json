@@ -14,8 +14,9 @@
           "Sulsira\\Templater\\": "src/"
       }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
-        "illuminate/support": "~5"
+        "illuminate/support": "~5",
+        "sulsira/templater": "dev-master"
     }
 }
